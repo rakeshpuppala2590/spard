@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>createpost</title>
+	<style>
+	 p {
+        font-size: 20px;
+       }
+   .button {
+	background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+	
+    width: 100%;
+    opacity: 0.9;
+   }
+    body  {
+    background-attachment: fixed;
+   }
+    hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+   }
+   .container {
+    padding: 40px;
+    background-color:white;
+    width: 40%;
+	margin-left:25%;
+	margin-top:5%;
+  }
+  input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+	</style>
+  </head>
+   <body background="index.png">
+    <div class="container">
+     <form action="createpost.php" role="form" method="post" id="reused_form">
+	            <p>
+				   <center><h1>post creation</h1></center>
+      <hr>
+      <label><b>Title</b></label>
+      <input type="text" placeholder="Enter Tittle" name="tittle" required>
+
+      <label><b>Field</b></label>
+      <input type="text" placeholder="Enter Field" name="Field" required>
+
+      <label><b>Subject</b></label>
+      <input type="text" placeholder="Subject" name="Subject" required>
+	  <input type="file" name="pic" accept="image/*">
+      <center><input type="submit" class="button" value="createpost"></center>
+	  </p>		 	  			   
+       </form>
+	  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback Form</title>
+	<style>
+	 p {
+        font-size: 20px;
+       }
+   div {
+       background-color:#e8ecf2;
+       width: 40%;
+       padding: 50px;
+	   margin-left:25%;
+	   margin-top:5%;
+       }
+   .button {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 10px;
+}
+    body  {
+    background-attachment: fixed;
+}
+	</style>
+  </head>
+   <body background="index.png">
+    <div>
+	 <center><b><big>FEEDBACK</big></b></center>
+     <form action="feedback.php" role="form" method="post" id="reused_form">
+	            <p>
+                 <b>1.How did you hear about this website?</b><br><br>
+                     <input type="radio" name="r1" value="socialmedia" >
+					  SocialMedia
+                     </input>
+					 <input type="radio" name="r1" value="searchengine" >
+					  SearchEngine
+                     </input>
+					 <input type="radio" name="r1" value="advertisment" >
+					  Advertisment
+                     </input>
+					 <input type="radio" name="r1" value="others" >
+					  others
+                     </input><br><br><br>
+                 <b>2.Is our website satisfactory?</b><br><br>
+                     <input type="radio" name="r2" value="verystasfied" >
+					   Verysatisified
+                     </input>
+					 <input type="radio" name="r2" value="stasfied" >
+					   satisfied
+                     </input>
+					 <input type="radio" name="r2" value="neutral" >
+					  Neutral
+                     </input>
+					 <input type="radio" name="r2" value="unstasfied" >
+					   Unsatisfied
+                     </input> <br><br><br>
+				 <b>3.Is there any progress by using our website?</b><br><br>
+                     <input type="radio" name="r3" value="yes" >
+					   Yes
+                     </input>
+					 <input type="radio" name="r3" value="no" >
+					   No 
+					 </input><br><br><br>
+                 <b>4.Would you recommend our website to your colleagues and friends?</b><br><br>
+                     <input type="radio" name="r4" value="yes" >
+					   Yes
+                     </input>
+					 <input type="radio" name="r4" value="no" >
+					   No 
+					 </input><br><br><br>
+				 <b>5.How would you suggest to improve our website?</b><br><br>
+                     <textarea rows="6" cols="50" name="r5">
+                     </textarea><br><br>
+					 <input type="submit" class="button" value="submit">
+			 </p>		 	  			   
+       </form>
+	  </div>
+</body>
+</html>
